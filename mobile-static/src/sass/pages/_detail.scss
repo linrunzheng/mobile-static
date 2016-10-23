@@ -1,0 +1,184 @@
+header {
+    div {
+        position: relative;
+        height: torem(784px);
+        img {
+            width: 100%;
+            height: torem(784px);
+        }
+        span,
+        em,
+        i {
+            border-radius: 50%;
+            position: absolute;
+            width: torem(68px);
+            height: torem(68px);
+            top: torem(64px);
+        }
+        span {
+            left: torem(38px);
+            background: #acb3b0 url(../../img/back.png) no-repeat center center/torem(26px) torem(46px);
+        }
+        em {
+            right: torem(216px);
+            background: #acb3b0 url(../../img/search.png) no-repeat center center/torem(53px) torem(53px);
+        }
+        i {
+            right: torem(48px);
+            background: #acb3b0 url(../../img/dot3.png) no-repeat center center/torem(15px) torem(60px);
+        }
+    }
+    ul {
+        border-top: 1px solid #8a8a89;
+        border-bottom: 1px solid #8a8a89;
+        li {
+            float: left;
+            height: torem(134px);
+            line-height: torem(134px);
+            border-right: 2px solid #8a8a89;
+            width: 50%;
+            box-sizing: border-box;
+            text-align: center;
+            @include font-dpr(16px);
+            a {
+            	color:#3e403f;
+                padding-left: torem(78px);
+                position: relative;
+                span {
+                    position: absolute;
+                    top: 50%;
+                    width: torem(76px);
+                    height: torem(76px);
+                    left: torem(-22px);
+                    background: url(../../img/heart.png) no-repeat center center/torem(73px) torem(64px);
+                    margin-top: torem(-38px);
+                }
+
+            .share {
+            	
+            	@include spImg("../../img/sprite.png",torem(-115px),0,torem(424px))             
+                }
+            }
+            &:nth-of-type(2) {
+                border-right: none;
+            }
+        }
+    }
+}
+.introduce{
+	border:torem(50px) solid #f0f0f0;
+	border-right: none; 
+	border-left: none; 
+	padding:0 torem(58px) 0 torem(40px);
+	h3{
+		padding-top: torem(40px);
+		border-top:1px solid #d8d8d8;
+		padding-bottom: torem(24px);
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		color: #3e403f;
+		@include font-dpr(14px);
+	}
+	p{
+		@include font-dpr(12px);
+		color:#b8b2b3;
+		display: -webkit-box;
+		-webkit-line-clamp:3;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	span{
+		display: block;
+		padding-top: torem(24px);
+		padding-bottom: torem(26px);
+		border-bottom:1px solid #d8d8d8;
+		@include font-dpr(16px);
+		color:#ff4f64;
+	}
+}
+.keyword{
+	padding:torem(30px) torem(34px);
+	border-bottom:1px solid #d8d8d8;
+	border-top:1px solid #d8d8d8;
+	p{
+		@include font-dpr(14px);
+		color:#303131;
+		padding-bottom: torem(24px);
+	}
+	li{
+		float: left;
+		color:#fff;
+		background:#f87282;
+		width: torem(210px);
+		height: torem(52px);
+		border-radius: torem(30px);
+		text-align: center;
+		line-height:torem(52px);
+		margin-right: torem(76px);
+		@include font-dpr(12px);
+	}
+}
+
+footer{
+	padding-left: torem(34px);
+	padding-top: torem(20px);
+	padding-bottom: torem(14px);
+	border-bottom: 1px solid #dad9da;
+	p{
+		padding-top: torem(16px);
+		
+		@include font-dpr(12px);
+		color:#b8b2b3;
+		line-height: torem(50px);
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp:2;
+		-webkit-box-orient: vertical;
+		
+
+	}
+	h3{
+		text-indent: torem(15px);
+		@include font-dpr(16px);
+		color:#2b2b2b;
+		border-left:torem(6px) solid #ff4f64;
+	}
+}
+.car{
+	height: torem(90px);
+	position: relative;
+	strong{
+		position: absolute;
+		left: torem(36px);
+		top:torem(15px); 
+		width: torem(66px);
+		height: torem(66px);
+		background:url(../../img/car.png) no-repeat center center/torem(60px) torem(60px);
+	}
+	span,em{
+		position: absolute;
+		width: torem(206px);	
+		top:torem(22px);
+		height: torem(50px);
+		border: 1px solid #ff4f64;
+		text-align: center;
+		border-radius:2px;
+	}
+	span{
+		right: torem(38px);
+		background:#f0f0f0;
+		color:#f87282;
+	}
+	em{
+		right: torem(272px);
+		background:#f87282;
+		color:#fff;
+	}
+
+
+
+
+}

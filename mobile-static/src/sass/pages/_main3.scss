@@ -1,0 +1,22 @@
+.main{
+	&:nth-of-type(3){
+		padding-top:0;
+		
+	}
+	div{
+		p{
+			color:#56464a;
+		}
+		img{
+			border-bottom: 1px solid #e7e7e7;
+		}
+	}
+	.bot{
+		width: torem(480px);
+		float: left;
+		border: 1px solid #e7e7e7;
+		&:nth-of-type(2){
+			float: right;
+		}
+	}
+}

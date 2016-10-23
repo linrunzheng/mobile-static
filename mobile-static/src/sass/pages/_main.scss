@@ -1,0 +1,95 @@
+
+
+
+.imgtab{
+	
+	
+	img{
+		width: 100%;
+		height:torem(784px);
+		padding:torem(10px);
+		box-sizing:border-box;
+	}
+}
+.nav{
+	border-bottom:torem(20px) solid #f0f0f0;
+	border-top:torem(20px) solid #f0f0f0;
+	ul{
+		padding:torem(24px) 0 torem(24px);
+		li{
+			width: 25%;
+			float: left;
+			figure{
+
+				text-align: center;
+				img{
+					width: torem(116px);
+					height: torem(116px);
+				}
+				p{
+					color: #161616;
+				}
+			}
+		}
+	}
+}
+
+.day{
+	ul{
+		padding:torem(30px) 0 torem(30px);
+		border-bottom: torem(8px) solid #f0f0f0;
+	}
+	li{
+		float: left;
+		@include font-dpr(18px);
+		text-align: center;
+		width: 50%;
+		box-sizing:border-box;
+		a{
+			color: #000;
+		}
+		&:nth-of-type(1){
+			border-right: 1px solid #a0a0a0;
+			a{
+				color: #f84056;
+			}
+		}
+	}
+}
+footer{
+	margin-bottom:torem(64px);
+	padding:torem(30px) torem(30px) torem(0px);
+	h3{
+		position: relative;
+		height: torem(92px);
+		line-height: torem(92px);
+		padding-left:torem(72px);
+		margin-bottom:torem(22px);
+		color: #aeb4be;
+		@include font-dpr(14px);
+		span{
+			width: torem(50px);
+			height: torem(50px);
+			position: absolute;
+			top:50%;
+			left:0;
+			background: url(../../img/gb.png) no-repeat center center/torem(50px) torem(50px);
+			margin-top: torem(-25px);
+		}
+	}
+	div{
+		img{
+			width: 100%;
+			height: torem(278px);
+		}
+	}
+}
+
+
+.test{
+	// @include table-center;
+	@include poa(torem(200px),200px,torem(300px),300px);
+	@include t-overflow(4);
+	@extend .clearfix3;
+	@extend %bd1;
+}

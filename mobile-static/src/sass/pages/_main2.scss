@@ -1,0 +1,58 @@
+
+
+body{
+	background:#f0f0f0;
+}
+.main{
+	border: 1px solid #f0f0f0;
+	background:#f0f0f0;
+	box-sizing: border-box;
+	padding:torem(30px);
+	> div{
+		background:#fff;
+		width: 100%;
+		position: relative;
+		border-radius:10px;
+		border: 1px solid #f0f0f0;
+		img{
+		
+			width: 100%;
+			height: torem(550px);
+		}
+		.hotsell{
+			width: torem(176px);
+			height: torem(68px);
+			position: absolute;
+			top:0;
+			right:torem(28px);
+			background:#f0283f;
+			@include font-dpr(16px);
+			text-align: center;
+			color:#fff;
+			line-height:torem(68px);
+		}
+		h4{
+			color:#121212;
+			@include font-dpr(14px);
+			text-indent: torem(26px);
+			padding:torem(12px) 0;
+		}
+		p{
+			text-indent: torem(26px);
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			color: #f0283f;
+			@include font-dpr(12px);
+			padding-bottom: torem(12px);
+		}
+		div{
+			text-indent: torem(26px);
+			color:#121212;
+			@include font-dpr(12px);
+			span{
+				color:#f0283f;
+			}
+		}
+	}
+}
